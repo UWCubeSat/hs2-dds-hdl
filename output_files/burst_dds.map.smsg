@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at burst_dds.sv(48): extended using "x" or "z" File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 48
+Warning (10273): Verilog HDL warning at burst_dds.sv(73): extended using "x" or "z" File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 73
+Warning (10273): Verilog HDL warning at DevBoardGPIO_Top.sv(14): extended using "x" or "z" File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/DevBoardGPIO_Top.sv Line: 14
+Warning (10273): Verilog HDL warning at DevBoardGPIO_Top.sv(21): extended using "x" or "z" File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/DevBoardGPIO_Top.sv Line: 21
+Warning (10268): Verilog HDL information at debouncer.sv(19): always construct contains both blocking and non-blocking assignments File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/debouncer.sv Line: 19

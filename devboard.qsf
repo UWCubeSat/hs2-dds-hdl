@@ -1,0 +1,169 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 20:32:55  June 13, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		devboard_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:39:03  JUNE 13, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_12 -to CLOCK_50
+set_location_assignment PIN_8 -to HEX0[1]
+set_location_assignment PIN_15 -to HEX0[0]
+set_location_assignment PIN_7 -to HEX0[2]
+set_location_assignment PIN_6 -to HEX0[3]
+set_location_assignment PIN_5 -to HEX0[4]
+set_location_assignment PIN_4 -to HEX0[5]
+set_location_assignment PIN_3 -to HEX0[6]
+set_location_assignment PIN_27 -to HEX1[0]
+set_location_assignment PIN_26 -to HEX1[1]
+set_location_assignment PIN_21 -to HEX1[2]
+set_location_assignment PIN_20 -to HEX1[3]
+set_location_assignment PIN_19 -to HEX1[4]
+set_location_assignment PIN_18 -to HEX1[5]
+set_location_assignment PIN_17 -to HEX1[6]
+set_location_assignment PIN_37 -to HEX2[0]
+set_location_assignment PIN_36 -to HEX2[1]
+set_location_assignment PIN_35 -to HEX2[2]
+set_location_assignment PIN_34 -to HEX2[3]
+set_location_assignment PIN_33 -to HEX2[4]
+set_location_assignment PIN_30 -to HEX2[5]
+set_location_assignment PIN_29 -to HEX2[6]
+set_location_assignment PIN_49 -to HEX3[0]
+set_location_assignment PIN_48 -to HEX3[1]
+set_location_assignment PIN_47 -to HEX3[2]
+set_location_assignment PIN_42 -to HEX3[3]
+set_location_assignment PIN_41 -to HEX3[4]
+set_location_assignment PIN_40 -to HEX3[5]
+set_location_assignment PIN_39 -to HEX3[6]
+set_location_assignment PIN_57 -to HEX4[0]
+set_location_assignment PIN_56 -to HEX4[1]
+set_location_assignment PIN_55 -to HEX4[2]
+set_location_assignment PIN_54 -to HEX4[3]
+set_location_assignment PIN_53 -to HEX4[4]
+set_location_assignment PIN_52 -to HEX4[5]
+set_location_assignment PIN_51 -to HEX4[6]
+set_location_assignment PIN_71 -to HEX5[0]
+set_location_assignment PIN_70 -to HEX5[1]
+set_location_assignment PIN_69 -to HEX5[2]
+set_location_assignment PIN_68 -to HEX5[3]
+set_location_assignment PIN_67 -to HEX5[4]
+set_location_assignment PIN_66 -to HEX5[5]
+set_location_assignment PIN_61 -to HEX5[6]
+set_location_assignment PIN_84 -to SW[0]
+set_location_assignment PIN_85 -to SW[1]
+set_location_assignment PIN_87 -to SW[3]
+set_location_assignment PIN_88 -to SW[4]
+set_location_assignment PIN_72 -to LEDR[0]
+set_location_assignment PIN_73 -to LEDR[1]
+set_location_assignment PIN_74 -to LEDR[2]
+set_location_assignment PIN_75 -to LEDR[3]
+set_location_assignment PIN_76 -to LEDR[4]
+set_location_assignment PIN_77 -to LEDR[5]
+set_location_assignment PIN_78 -to LEDR[6]
+set_location_assignment PIN_81 -to LEDR[7]
+set_location_assignment PIN_82 -to LEDR[8]
+set_location_assignment PIN_83 -to LEDR[9]
+set_location_assignment PIN_96 -to KEY[0]
+set_location_assignment PIN_97 -to KEY[1]
+set_location_assignment PIN_99 -to KEY[3]
+set_location_assignment PIN_98 -to KEY[2]
+set_location_assignment PIN_86 -to SW[2]
+set_location_assignment PIN_89 -to SW[5]
+set_location_assignment PIN_90 -to SW[6]
+set_location_assignment PIN_91 -to SW[7]
+set_location_assignment PIN_92 -to SW[8]
+set_location_assignment PIN_95 -to SW[9]
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "MAX V"
+set_global_assignment -name TOP_LEVEL_ENTITY DE1_SoC
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 100
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE 5M160ZT100C5
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+
+# ----------------------
+# start ENTITY(devboard)
+
+# end ENTITY(devboard)
+# --------------------
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name POR_SCHEME "INSTANT ON"
+set_global_assignment -name EN_USER_IO_WEAK_PULLUP ON
+set_global_assignment -name POF_VERIFY_PROTECT OFF
+set_global_assignment -name EN_SPI_IO_WEAK_PULLUP ON
+set_global_assignment -name ENABLE_SPI_MODE_CHECK OFF
+set_global_assignment -name FORCE_SSMCLK_TO_ISMCLK ON
+set_global_assignment -name FALLBACK_TO_EXTERNAL_FLASH OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 0
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_2 -to HEX0[7]
+set_location_assignment PIN_16 -to HEX1[7]
+set_location_assignment PIN_28 -to HEX2[7]
+set_location_assignment PIN_58 -to HEX5[7]
+set_location_assignment PIN_38 -to HEX3[7]
+set_location_assignment PIN_50 -to HEX4[7]
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../../../../271/Lab7/StarterFiles/DE1_SoC.sv
+set_global_assignment -name SYSTEMVERILOG_FILE debouncer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../../../../271/Lab1/StarterFiles/seg7.sv
+set_global_assignment -name SYSTEMVERILOG_FILE blinker.sv
+set_global_assignment -name SYSTEMVERILOG_FILE d_ff.sv
+set_global_assignment -name SYSTEMVERILOG_FILE clk_divider.sv
+set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE burst_dds.sv

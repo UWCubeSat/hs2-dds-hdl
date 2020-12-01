@@ -1,0 +1,25 @@
+module DevBoardGPIO_Top(GPIO)
+	input logic [35:0] GPIO;
+	
+	burst_dds DUT(	
+		.ADDR,      //addresses        //SRAM Signals
+		.DATA,      //data
+		.SRAM_CLK,  //gated clock
+		.ADSC,      //address statuses
+		.ADSP,
+		.ADV,       //address advance
+		.BWE,       //byte write enable
+		.CE,        //chip enables
+		.DATA_P,    //parity data
+		.GW,        //global write enable
+		.MODE,      //Burst Sequence Mode Select
+		.OE,        //output enable
+		.ZZ,        //snooze enable
+		.MOSI,      //MOSI               //SPI Signals
+		.MISO,      //MISO
+		.LS_CLK,    //SCK
+		.SPI_CE    //CPLD chip enable
+	);
+
+
+endmodule

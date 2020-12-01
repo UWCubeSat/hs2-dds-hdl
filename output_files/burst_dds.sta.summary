@@ -1,0 +1,29 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'SCKe'
+Slack : -6.034
+TNS   : -205.083
+
+Type  : Setup 'HS_CLK'
+Slack : -4.433
+TNS   : -72.257
+
+Type  : Hold 'HS_CLK'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Hold 'SCKe'
+Slack : 2.019
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'HS_CLK'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'SCKe'
+Slack : -2.289
+TNS   : -2.289
+
+------------------------------------------------------------

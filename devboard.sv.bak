@@ -1,0 +1,43 @@
+
+module DE1_SoC (CLOCK_50, KEY, LEDR);
+	
+	input wire CLOCK_50; // 50MHz clock.
+	
+	//inputs and outputs
+	output wire [9:0] LEDR;
+	input wire [3:0] KEY;
+	
+	wire clk;
+	clk_divider(CLOCK_50,clk);
+	
+	wire ren, len;
+	
+	controller ctl(
+		.clk(CLOCK_50),
+		.left_switch(!KEY[0]),
+		.right_switch(!KEY[3]),
+		.roe(ren),
+		.loe(len)
+	);
+	
+	blinker rblinker(
+		.enable(ren),
+		.clk(clk),
+		.led(LEDR[9:6])
+	);
+	
+	wire [3:0] ledbuffer;
+		
+	blinker lblinker(
+		.enable(len),
+		.clk(clk),
+		.led(ledbuffer)
+	);		
+	
+	assign LEDR[0] = ledbuffer[3];
+	assign LEDR[1] = ledbuffer[2];
+	assign LEDR[2] = ledbuffer[1];
+	assign LEDR[3] = ledbuffer[0];
+	
+	
+endmodule

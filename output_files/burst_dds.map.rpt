@@ -1,0 +1,282 @@
+Analysis & Synthesis report for burst_dds
+Fri Nov 20 13:39:08 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Analysis & Synthesis Messages
+ 11. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri Nov 20 13:39:08 2020       ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; burst_dds                                   ;
+; Top-level Entity Name       ; burst_dds                                   ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 79                                          ;
+; Total pins                  ; 72                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 5M160ZT100C4       ;                    ;
+; Top-level entity name                                            ; burst_dds          ; burst_dds          ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+; burst_dds.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 79    ;
+;     -- Combinational with no register       ; 21    ;
+;     -- Register only                        ; 1     ;
+;     -- Combinational with a register        ; 57    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 18    ;
+;     -- 3 input functions                    ; 20    ;
+;     -- 2 input functions                    ; 38    ;
+;     -- 1 input functions                    ; 2     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 44    ;
+;     -- arithmetic mode                      ; 35    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 22    ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 58    ;
+; Total logic cells in carry chains           ; 38    ;
+; I/O pins                                    ; 72    ;
+; Maximum fan-out node                        ; SCKe  ;
+; Maximum fan-out                             ; 41    ;
+; Total fan-out                               ; 376   ;
+; Average fan-out                             ; 2.49  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |burst_dds                 ; 79 (79)     ; 58           ; 0          ; 72   ; 0            ; 21 (21)      ; 1 (1)             ; 57 (57)          ; 38 (38)         ; 0 (0)      ; |burst_dds          ; burst_dds   ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; ADSC~reg0                             ; Stuck at GND due to stuck port data_in ;
+; CE[2]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; CE[1]~reg0                            ; Stuck at VCC due to stuck port data_in ;
+; CE[0]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 58    ;
+; Number of registers using Synchronous Clear  ; 22    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Nov 20 13:38:59 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off burst_dds -c burst_dds
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file devboard.sv
+    Info (12023): Found entity 1: devboard File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/devboard.sv Line: 2
+Info (12021): Found 2 design units, including 2 entities, in source file burst_dds.sv
+    Info (12023): Found entity 1: burst_dds File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 11
+    Info (12023): Found entity 2: burst_dds_tb File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 117
+Info (12021): Found 2 design units, including 2 entities, in source file devboardgpio_top.sv
+    Info (12023): Found entity 1: DevBoardGPIO_Top File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/DevBoardGPIO_Top.sv Line: 1
+    Info (12023): Found entity 2: DevBoardGPIO_Top_tb File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/DevBoardGPIO_Top.sv Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file clk_divider.sv
+    Info (12023): Found entity 1: clk_divider File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/clk_divider.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file debouncer.sv
+    Info (12023): Found entity 1: debouncer File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/debouncer.sv Line: 1
+Info (12127): Elaborating entity "burst_dds" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at burst_dds.sv(86): truncated value with size 32 to match size of target (5) File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 86
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ADSC" is stuck at GND File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 37
+    Warning (13410): Pin "ADSP" is stuck at VCC File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 37
+    Warning (13410): Pin "ADV" is stuck at VCC File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 37
+    Warning (13410): Pin "BWE" is stuck at VCC File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 37
+    Warning (13410): Pin "CE[0]" is stuck at GND File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 84
+    Warning (13410): Pin "CE[1]" is stuck at VCC File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 84
+    Warning (13410): Pin "CE[2]" is stuck at GND File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 84
+    Warning (13410): Pin "MODE" is stuck at GND File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 37
+    Warning (13410): Pin "ZZ" is stuck at GND File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 37
+    Warning (13410): Pin "MISO" is stuck at VCC File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 43
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "MOSI" File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 42
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/burst_dds.sv Line: 45
+Info (21057): Implemented 151 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 66 output pins
+    Info (21061): Implemented 79 logic cells
+Info (144001): Generated suppressed messages file C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/output_files/burst_dds.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4707 megabytes
+    Info: Processing ended: Fri Nov 20 13:39:08 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:15
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/hansg/Desktop/HS2/GPR/DDS/HDL/output_files/burst_dds.map.smsg.
+
+
